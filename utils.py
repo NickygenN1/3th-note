@@ -18,7 +18,7 @@ def txt2md(path: str) :
                 # add width and height to ![image](path) :image microscope.png w=50 h=40
                 elif texts[0] == ':image' :
                     join = False
-                    dest = f'<img src="{texts[1]}"  width="{texts[2][2:]}px" height="{texts[3][2:-1]}px">\n'
+                    dest = f'<img src="{texts[1]}"  width="{texts[2][2:]}" height="{texts[3][2:-1]}">\n'
                     line = dest
 
                 # table
